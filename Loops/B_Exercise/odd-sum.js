@@ -5,8 +5,10 @@
 
 function oddSum(max){
     let sum = 0;
-    for(let i = 1; i <= max; i += 2){
-       sum +=i
+    for(let i = 1; i <= max; i++){
+      if(i % 2 !== 0){
+       sum += i
+      }
     }
   return sum
 }
