@@ -7,6 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>hey</h2>
+    <form id="libraryForm">
+        <label for="title">Title: <input type="text" id="title"></label>
+        <label for="author">Author</label>: <input type="text" id="author"></label>
+
+
+        <div id="rads">
+            <h3>Type of book</h3>
+            <label for="type"><input type="radio" id="computer" name="book" value="computer">Computer</label>
+            <label for="type"><input type="radio" id="science" name="book" value="science">Science</label>
+            <label for="type"><input type="radio" id="fiction" name="book" value="fiction">Fiction</label>
+        </div>
+        <div>
+            <button>Add Book</button>
+        </div>
+    </form>
+    <div id="display"></div>
+    <script src="script.js"></script>
 </body>
 </html>
