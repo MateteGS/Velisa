@@ -1,19 +1,15 @@
- # Project Name: Hello Velisa Africa Academy!
-Velisa student portal
+ # Project Name: Library Code!
 
 # Description
-Demo project of Velisa student portal, it is were students and other people can leave 
-their comments about their experience with Velisa also, it will be a place 
-were they can get all the course content, notes & assistance
+OPP - using constructor functions to add your favorite books to an array
 
 ## live View
-[live view](https://fabulous-marshmallow-8c256e.netlify.app/)
+[live view](http://127.0.0.1:5500/Velisa/Projects_in_java/oop_library/index.html)
 
 ## Built With
 
 - HTML
 - CSS
-- JavaScript
 
 ## Getting Started
 
