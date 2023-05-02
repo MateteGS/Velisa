@@ -1,14 +1,14 @@
-# newOne
-Trying something different with html and css 
+# restaurant_my_style
+remake of restaurant website  
 
- # Project Name: Testing the waters!
+ # Project Name: improving!
 css project
 
 # Description
-Trying to check my limits
+bit of a pick me up
 
 ## live View
-[live view](https://famous-frangollo-d7f413.netlify.app/)
+[live view]()
 
 ## Built With
 
@@ -42,7 +42,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Mindset of reaching to new heights
+- my lecture
 
 ## 📝 License
 
