@@ -48,8 +48,6 @@ a {
   text-decoration: none;
 }
 
-
-
 .home:active {
   color: red;
 }
@@ -85,6 +83,7 @@ i {
   width: 40%;
   position: relative;
 }
+
 #right {
   width: 60%;
   padding: 10px;
@@ -109,8 +108,9 @@ h1 {
 img {
   width: 100%;
   object-fit: cover;
-  
+  height: 100%;
 }
+
 img:hover {
   box-shadow: 1px 1px 25px gray;
 }
