@@ -30,6 +30,7 @@
   --color3: rgb(220, 218, 218);
   --color4: white;
   --color5: rgb(210, 182, 20);
+  --color6: red;
 }
 
 body {
@@ -116,14 +117,12 @@ img:hover {
 }
 
 
-
-
-
 /* menupage */
 
 #menu {
   height: 100vh;
-  background-color: var(--color1);
+  background-color: var(--color5);
+ 
 }
 
 #first {
@@ -156,8 +155,7 @@ img:hover {
   position: absolute;
 }
 #filet:hover , #lobster:hover, #steak:hover,  #redvelvet:hover{
-    z-index: -1;
-    
+    z-index: -1; 
 }
 
 #one,#two,#three,#four {
@@ -171,6 +169,39 @@ img:hover {
   justify-content: center;
 }
 
+#second h2 {
+  text-align: center;
+  font-family: var(--font3);
+  margin: 10px;
+  margin-top: 50px;
+  color: red;
+}
+
+#second h3{
+  text-align: center;
+  color: var(--color2);
+}
+
+#five,#six,#seven,#eight {
+  height: 0;
+  position: relative;
+  background-color: var(--color2);
+  color: var(--color5);
+ 
+}
+
+#redwine,#shampagne,#whisky,#sider {
+  position: absolute;
+}
+#redwine:hover , #shampagne:hover, #whisky:hover,  #sider:hover{
+    z-index: -1; 
+}
+
+#five:hover,#six:hover,#seven:hover,#eight:hover {
+  border: 8px solid var(--color2);
+  background-color: var(--color3);
+}
+
 #five,#six,#seven,#eight {
   width: 250px;
   height: 250px;
@@ -181,8 +212,58 @@ img:hover {
 #order {
   height: 70vh;
   background-color: var(--color2);
+  color: var(--color4);
+  font-size: var(--step-3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+#flex {
+  display: flex;
+  gap: 20px;
+}
+
+#flex2 {
+  display: flex;
+  flex-direction: column;
+}
+
+#order h2 {
+  color: white;
+  font-family: var(--font3);
+  font-size: var(--step-6);
+  text-shadow: 3px 4px var(--color6);
+  margin-bottom: 15px;
+}
+
+#amount {
+  font-family: var(--font2);
+  display: block;
+  margin: 10px 0;
+}
+
+#order input[type="text"] {
+  width: 200px;
+  height: 32px;
+  border-radius: 10px;
+  border: 5px solid var(--color3);
+}
+
+button {
+  display: block;
+  padding: 10px 100px;
+  border-radius: 30px;
+  font-family: var(--font3);
+  font-size: var(--step-3);
+  box-shadow: 2px 5px var(--color6);
+  border: 3px solid var(--color1);
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  transform: scale(0.8);
+}
 
 /* contactpage */
 
