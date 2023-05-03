@@ -9,19 +9,134 @@
 :root {
   font-size: 62.5%;
 
-  font-family: 'Caveat', cursive;
-  font-family: 'Creepster', cursive;
   font-family: 'Roboto', sans-serif;
+  --font3: 'Creepster', cursive;
+  --font2: 'Caveat', cursive;
+
+  --step--2: clamp(0.78rem, calc(0.71rem + 0.38vw), 1.00rem);
+  --step--1: clamp(0.94rem, calc(0.83rem + 0.54vw), 1.25rem);
+  --step-0: clamp(1.13rem, calc(0.97rem + 0.76vw), 1.56rem);
+  --step-1: clamp(1.35rem, calc(1.14rem + 1.05vw), 1.95rem);
+  --step-2: clamp(1.62rem, calc(1.33rem + 1.43vw), 2.44rem);
+  --step-3: clamp(1.94rem, calc(1.56rem + 1.93vw), 3.05rem);
+  --step-4: clamp(2.33rem, calc(1.82rem + 2.58vw), 3.82rem);
+  --step-5: clamp(2.80rem, calc(2.11rem + 3.42vw), 4.77rem);
+  --step-6: clamp(1.94rem, calc(0.71rem + 6.17vw), 5.49rem);
+  --step-7: clamp(2.33rem, calc(0.76rem + 7.88vw), 6.87rem);
+  --step-8: clamp(2.80rem, calc(0.79rem + 10.06vw), 8.58rem);
+
+  --color1: yellow;
+  --color2: black;
+  --color3: rgb(220, 218, 218);
+  --color4: white;
+  --color5: rgb(210, 182, 20);
 }
 
 body {
   font-size: 1.8rem;
+  background-color: var(--color3);
 }
 
 ul {
   list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: var(--step-2);
 }
 
 a {
   text-decoration: none;
+}
+
+
+
+.home:active {
+  color: red;
+}
+
+
+ /* header */
+
+header {
+  width: 90%;
+  margin: 0 auto;
+  background-color: var(--color3);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+  color: var(--color1);
+  font-size: var(--step-4);
+
+}
+
+/* homepage */
+
+#home {
+  height:90vh;
+  background: var(--color2);
+  color: white;
+  display: flex;
+}
+
+#left {
+  width: 40%;
+  position: relative;
+}
+#right {
+  width: 60%;
+  padding: 10px;
+  
+}
+
+#as {
+  font-family: var(--font2);
+  margin-right: 60px;
+  color: var(--color5);
+}
+
+h1 {
+   font-family: var(--font3);
+   font-size: var(--step-8);
+   text-shadow: 2px 2px var(--color1);
+   position: absolute;
+   left: 38%;
+   top: 20%;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  
+}
+img:hover {
+  box-shadow: 1px 1px 25px gray;
+}
+
+
+
+
+
+/* menupage */
+
+#menu {
+  height: 100vh;
+  background-color: var(--color1);
+}
+
+/* orderpage */
+
+#order {
+  height: 70vh;
+  background-color: var(--color2);
+}
+
+
+/* contactpage */
+
+#contact {
+  height: 30vh;
+  background-color: var(--color3);
 }
