@@ -4,18 +4,123 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>My restaurant</title>
   </head>
   <body>
     <header>
-      <ul>
-        <li><a href="home">Home</a></li>
-        <li><a href="menu">Menu</a></li>
-        <li><a href="order">Order</a></li>
-        <li><a href="about">About Us</a></li>
-        <li><a href="contact">Contact</a></li>
-      </ul>
+      <i class="fa-solid fa-kitchen-set"></i>
+
+      <div>
+        <ul>
+          <li><a href="#home" class="home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </header>
+
+    <div id="home">
+      <div id="left">
+        <h1>V<span id="as">s</span> Restaurant</h1>
+      </div>
+      <div id="right">
+        <img src="images/homeImage.jpg" alt="" />
+      </div>
+    </div>
+
+    <div id="menu">
+      <div id="first">
+        <div id="one">
+          <img src="images/filtetmignon.jpeg" id="filet" alt="" />
+          <h2>filet Mignon</h2>
+          <h3>price......$15</h3>
+        </div>
+        <div id="two">
+          <img src="images/Lobster.webp" id="lobster" alt="" />
+          <h2>Lobster</h2>
+          <h3>price......$30</h3>
+        </div>
+        <div id="three">
+          <img src="images/steak.jpeg" id="steak" alt="" />
+          <h2>steak</h2>
+          <h3>price......$25</h3>
+        </div>
+        <div id="four">
+          <img src="images/redvelvet.jpeg" id="redvelvet" alt="" />
+          <h2>filet Red velvet cake</h2>
+          <h3>price......$5</h3>
+        </div>
+      </div>
+
+      <div id="second">
+        <div id="five">
+          <img src="images/redwine.jpg" id="redwine" alt="" />
+          <h2>Red wine</h2>
+          <h3>price......$10</h3>
+        </div>
+        <div id="six">
+          <img src="images/shampagne.webp" id="shampagne" alt="" />
+          <h2>shampagne</h2>
+          <h3>price......$90</h3>
+        </div>
+        <div id="seven">
+          <img src="images/whisky.jpeg" id="whisky" alt="" />
+          <h2>whisky</h2>
+          <h3>price......$150</h3>
+        </div>
+        <div id="eight">
+          <img src="images/sider.png" id="sider" alt="" />
+          <h2>sider</h2>
+          <h3>price......$4</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="order">
+      <div id="wrapper">
+        <h2>Place your order</h2>
+      <div id="flex">
+        <div id="flex2">
+          <label for=""><input type="checkbox" /> Filtet Mignon</label>
+          <label for=""><input type="checkbox" /> Lobster</label>
+          <label for=""><input type="checkbox" /> Steak</label>
+          <label for=""><input type="checkbox" /> Red Velvet</label>
+        </div>
+
+        <div id="flex2">
+          <label for=""><input type="checkbox" /> Red wine</label>
+          <label for=""><input type="checkbox" /> Shampagne</label>
+          <label for=""><input type="checkbox" /> Whisky</label>
+          <label for=""><input type="checkbox" /> sider</label>
+        </div>
+      </div>
+
+      <label for="" id="amount">Amount: <input type="text"></label>
+
+      <button>Order</button>
+    </div>
+    </div>
+
+    <div id="about"></div>
+
+    <div id="contact">
+      <form action="">
+        <label for=""></label>
+        <input type="text" />
+        <label for=""></label>
+        <input type="text" />
+        <label for=""></label>
+        <input type="text" />
+        <label for=""></label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </form>
+    </div>
   </body>
 </html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Creepster&family=Roboto:wght@400;500;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +8,266 @@
 
 :root {
   font-size: 62.5%;
+
+  font-family: 'Roboto', sans-serif;
+  --font3: 'Creepster', cursive;
+  --font2: 'Caveat', cursive;
+
+  --step--2: clamp(0.78rem, calc(0.71rem + 0.38vw), 1.00rem);
+  --step--1: clamp(0.94rem, calc(0.83rem + 0.54vw), 1.25rem);
+  --step-0: clamp(1.13rem, calc(0.97rem + 0.76vw), 1.56rem);
+  --step-1: clamp(1.35rem, calc(1.14rem + 1.05vw), 1.95rem);
+  --step-2: clamp(1.62rem, calc(1.33rem + 1.43vw), 2.44rem);
+  --step-3: clamp(1.94rem, calc(1.56rem + 1.93vw), 3.05rem);
+  --step-4: clamp(2.33rem, calc(1.82rem + 2.58vw), 3.82rem);
+  --step-5: clamp(2.80rem, calc(2.11rem + 3.42vw), 4.77rem);
+  --step-6: clamp(1.94rem, calc(0.71rem + 6.17vw), 5.49rem);
+  --step-7: clamp(2.33rem, calc(0.76rem + 7.88vw), 6.87rem);
+  --step-8: clamp(2.80rem, calc(0.79rem + 10.06vw), 8.58rem);
+
+  --color1: yellow;
+  --color2: black;
+  --color3: rgb(220, 218, 218);
+  --color4: white;
+  --color5: rgb(210, 182, 20);
+  --color6: red;
 }
 
 body {
   font-size: 1.8rem;
+  background-color: var(--color3);
 }
 
 ul {
   list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: var(--step-2);
 }
 
 a {
   text-decoration: none;
+}
+
+.home:active {
+  color: red;
+}
+
+
+ /* header */
+
+header {
+  width: 90%;
+  margin: 0 auto;
+  background-color: var(--color3);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+  color: var(--color1);
+  font-size: var(--step-4);
+
+}
+
+/* homepage */
+
+#home {
+  height:90vh;
+  background: var(--color2);
+  color: white;
+  display: flex;
+}
+
+#left {
+  width: 40%;
+  position: relative;
+}
+
+#right {
+  width: 60%;
+  padding: 10px;
+  
+}
+
+#as {
+  font-family: var(--font2);
+  margin-right: 60px;
+  color: var(--color5);
+}
+
+h1 {
+   font-family: var(--font3);
+   font-size: var(--step-8);
+   text-shadow: 2px 2px var(--color1);
+   position: absolute;
+   left: 38%;
+   top: 20%;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+img:hover {
+  box-shadow: 1px 1px 25px gray;
+}
+
+
+/* menupage */
+
+#menu {
+  height: 100vh;
+  background-color: var(--color5);
+ 
+}
+
+#first {
+  display: flex;
+  gap: 20px;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#first h2 {
+  text-align: center;
+  font-family: var(--font2);
+  margin: 10px;
+  margin-top: 50px;
+}
+#first h3{
+  text-align: center;
+  color: white;
+}
+#one,#two,#three,#four {
+  height: 0;
+  position: relative;
+  background-color: var(--color2);
+  color: var(--color5);
+ 
+}
+
+#filet,#lobster,#steak,#redvelvet {
+  position: absolute;
+}
+#filet:hover , #lobster:hover, #steak:hover,  #redvelvet:hover{
+    z-index: -1; 
+}
+
+#one,#two,#three,#four {
+  width: 200px;
+  height: 200px;
+}
+
+#second {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+#second h2 {
+  text-align: center;
+  font-family: var(--font3);
+  margin: 10px;
+  margin-top: 50px;
+  color: red;
+}
+
+#second h3{
+  text-align: center;
+  color: var(--color2);
+}
+
+#five,#six,#seven,#eight {
+  height: 0;
+  position: relative;
+  background-color: var(--color2);
+  color: var(--color5);
+ 
+}
+
+#redwine,#shampagne,#whisky,#sider {
+  position: absolute;
+}
+#redwine:hover , #shampagne:hover, #whisky:hover,  #sider:hover{
+    z-index: -1; 
+}
+
+#five:hover,#six:hover,#seven:hover,#eight:hover {
+  border: 8px solid var(--color2);
+  background-color: var(--color3);
+}
+
+#five,#six,#seven,#eight {
+  width: 250px;
+  height: 250px;
+}
+
+/* orderpage */
+
+#order {
+  height: 70vh;
+  background-color: var(--color2);
+  color: var(--color4);
+  font-size: var(--step-3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#flex {
+  display: flex;
+  gap: 20px;
+}
+
+#flex2 {
+  display: flex;
+  flex-direction: column;
+}
+
+#order h2 {
+  color: white;
+  font-family: var(--font3);
+  font-size: var(--step-6);
+  text-shadow: 3px 4px var(--color6);
+  margin-bottom: 15px;
+}
+
+#amount {
+  font-family: var(--font2);
+  display: block;
+  margin: 10px 0;
+}
+
+#order input[type="text"] {
+  width: 200px;
+  height: 32px;
+  border-radius: 10px;
+  border: 5px solid var(--color3);
+}
+
+button {
+  display: block;
+  padding: 10px 100px;
+  border-radius: 30px;
+  font-family: var(--font3);
+  font-size: var(--step-3);
+  box-shadow: 2px 5px var(--color6);
+  border: 3px solid var(--color1);
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  transform: scale(0.8);
+}
+
+/* contactpage */
+
+#contact {
+  height: 30vh;
+  background-color: var(--color3);
 }
