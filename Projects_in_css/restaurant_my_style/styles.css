@@ -126,6 +126,56 @@ img:hover {
   background-color: var(--color1);
 }
 
+#first {
+  display: flex;
+  gap: 20px;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#first h2 {
+  text-align: center;
+  font-family: var(--font2);
+  margin: 10px;
+  margin-top: 50px;
+}
+#first h3{
+  text-align: center;
+  color: white;
+}
+#one,#two,#three,#four {
+  height: 0;
+  position: relative;
+  background-color: var(--color2);
+  color: var(--color5);
+ 
+}
+
+#filet,#lobster,#steak,#redvelvet {
+  position: absolute;
+}
+#filet:hover , #lobster:hover, #steak:hover,  #redvelvet:hover{
+    z-index: -1;
+    
+}
+
+#one,#two,#three,#four {
+  width: 200px;
+  height: 200px;
+}
+
+#second {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+#five,#six,#seven,#eight {
+  width: 250px;
+  height: 250px;
+}
+
 /* orderpage */
 
 #order {
