@@ -68,13 +68,12 @@ header {
 i {
   color: var(--color1);
   font-size: var(--step-4);
-
 }
 
 /* homepage */
 
 #home {
-  height:90vh;
+  min-height:90vh;
   background: var(--color2);
   color: white;
   display: flex;
@@ -120,7 +119,7 @@ img:hover {
 /* menupage */
 
 #menu {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--color5);
  
 }
@@ -210,7 +209,7 @@ img:hover {
 /* orderpage */
 
 #order {
-  height: 70vh;
+  min-height: 70vh;
   background-color: var(--color2);
   color: var(--color4);
   font-size: var(--step-3);
@@ -265,9 +264,45 @@ button:hover {
   transform: scale(0.8);
 }
 
+/* about  */
+
+#about {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: var(--step-7);
+  color: black;
+  text-shadow: 2px 2px 15px var(--color1);
+}
+
+#circle {
+    width: 200px;
+    height: auto;
+}
+
 /* contactpage */
 
 #contact {
-  height: 30vh;
+  min-height: 60vh;
   background-color: var(--color3);
+  background-color: var(--color2);
+  padding: 20px;
+  color: var(--color4);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input[type="text"]{
+  border: 5px double var(--color2);
+}
+
+textarea {
+  border: 5px double var(--color5);
 }
