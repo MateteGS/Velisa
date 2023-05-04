@@ -229,6 +229,19 @@ img:hover {
   
 }
 
+#flex2 label{
+  margin-left: 15px;
+}
+
+input[type="checkbox"] {
+  background-color: blueviolet;
+}
+
+#just {
+  display: flex;
+  align-items: center;
+}
+
 #order h2 {
   color: white;
   font-family: var(--font3);

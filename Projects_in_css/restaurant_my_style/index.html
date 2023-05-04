@@ -89,22 +89,36 @@
       <div id="flex">
         <div id="flex2">
           <div id="just">
-          <label for=""><input type="checkbox" id="filet"/> Filtet Mignon</label>
+            <input type="checkbox" id="filet" value="filet"/><label for=""> Filtet Mignon</label>
           </div>
-          <label for=""><input type="checkbox" id="lobster"/> Lobster</label>
-          <label for=""><input type="checkbox" /> Steak</label>
-          <label for="velvet"><input type="checkbox" id="velvet"/> Red Velvet</label>
+          <div id="just">
+            <input type="checkbox" id="lobster" value="lobster"/><label for=""> Lobster</label>
+          </div>
+          <div id="just">
+            <input type="checkbox" id="steak" value="steak"/><label for=""> Steak</label>
+          </div>
+          <div id="just">
+            <input type="checkbox" id="velvet" value="velvet"/><label for="velvet"> Red Velvet</label>
+          </div>
+         
         </div>
 
         <div id="flex2">
-          <label for="redwine"><input type="checkbox" id="redwine"/> Red wine</label>
-          <label for="shampagne"><input type="checkbox" id="shampagne"/> Shampagne</label>
-          <label for="whisky"><input type="checkbox" id="whisky"/> Whisky</label>
-          <label for="sider"><input type="checkbox" id="sider"/> sider</label>
+          <div id="just">
+            <input type="checkbox" id="redwine" value="redwine"/><label for="redwine"> Red wine</label></div>
+
+          <div id="just">
+            <input type="checkbox" id="shampagne" value="shampagne"/><label for="shampagne"> Shampagne</label></div>
+
+          <div id="just">
+            <input type="checkbox" id="whisky" value="whisky"/><label for="whisky"> Whisky</label></div>
+
+          <div id="just">
+            <input type="checkbox" id="sider" value="sider"/><label for="sider"> sider</label></div>
         </div>
       </div>
 
-      <label for="amount" id="amount">Amount: <input type="text" id="amount"></label>
+      <label for="amount">Amount: <input type="text" id="amount"></label>
 
       <button id="btn">Order</button>
     </div>
@@ -129,15 +143,15 @@
     </div>
 
     <div id="contact">
-      <form action="">
+      <form method="post" action="#home" name="myform" onsubmit="return validate()">
         <label for="">Name:</label>
-        <input type="text" />
+        <input type="text" name="name"/>
         <label for="">Facebook name:</label>
-        <input type="text" />
-        <label for="">Email:</label>
-        <input type="text" />
+        <input type="text" name="Facebook"/>
+        <label for="">Number:</label>
+        <input type="text" name="number"/>
         <label for="">Feedback</label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea name="" id="" cols="30" rows="10" name="feedback"></textarea>
         <button>Submit</button>
       </form>
     </div>
