@@ -226,6 +226,7 @@ img:hover {
 #flex2 {
   display: flex;
   flex-direction: column;
+  
 }
 
 #order h2 {

@@ -8,12 +8,13 @@ css project
 bit of a pick me up
 
 ## live View
-[live view]()
+[live view](http://127.0.0.1:5501/Velisa/Projects_in_css/restaurant_my_style/index.html)
 
 ## Built With
 
 - HTML
 - CSS
+- JavaScript
 
 ## Getting Started
 

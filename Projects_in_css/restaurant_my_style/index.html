@@ -88,23 +88,25 @@
         <h2>Place your order</h2>
       <div id="flex">
         <div id="flex2">
-          <label for=""><input type="checkbox" /> Filtet Mignon</label>
-          <label for=""><input type="checkbox" /> Lobster</label>
+          <div id="just">
+          <label for=""><input type="checkbox" id="filet"/> Filtet Mignon</label>
+          </div>
+          <label for=""><input type="checkbox" id="lobster"/> Lobster</label>
           <label for=""><input type="checkbox" /> Steak</label>
-          <label for=""><input type="checkbox" /> Red Velvet</label>
+          <label for="velvet"><input type="checkbox" id="velvet"/> Red Velvet</label>
         </div>
 
         <div id="flex2">
-          <label for=""><input type="checkbox" /> Red wine</label>
-          <label for=""><input type="checkbox" /> Shampagne</label>
-          <label for=""><input type="checkbox" /> Whisky</label>
-          <label for=""><input type="checkbox" /> sider</label>
+          <label for="redwine"><input type="checkbox" id="redwine"/> Red wine</label>
+          <label for="shampagne"><input type="checkbox" id="shampagne"/> Shampagne</label>
+          <label for="whisky"><input type="checkbox" id="whisky"/> Whisky</label>
+          <label for="sider"><input type="checkbox" id="sider"/> sider</label>
         </div>
       </div>
 
-      <label for="" id="amount">Amount: <input type="text"></label>
+      <label for="amount" id="amount">Amount: <input type="text" id="amount"></label>
 
-      <button>Order</button>
+      <button id="btn">Order</button>
     </div>
     </div>
 
@@ -139,5 +141,6 @@
         <button>Submit</button>
       </form>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
