@@ -12,7 +12,6 @@ function elementQuantities(obj){
     }
     return sum
 }
-
 let quantities1 = { cat: 3, bird: 1, dog: 2 };
 console.log(elementQuantities(quantities1)); // ['cat', 'cat', 'cat', 'bird, 'dog', 'dog']
 
