@@ -88,39 +88,73 @@
         <h2>Place your order</h2>
       <div id="flex">
         <div id="flex2">
-          <label for=""><input type="checkbox" /> Filtet Mignon</label>
-          <label for=""><input type="checkbox" /> Lobster</label>
-          <label for=""><input type="checkbox" /> Steak</label>
-          <label for=""><input type="checkbox" /> Red Velvet</label>
+          <div id="just">
+            <input type="checkbox" id="filet" value="filet"/><label for=""> Filtet Mignon</label>
+          </div>
+          <div id="just">
+            <input type="checkbox" id="lobster" value="lobster"/><label for=""> Lobster</label>
+          </div>
+          <div id="just">
+            <input type="checkbox" id="steak" value="steak"/><label for=""> Steak</label>
+          </div>
+          <div id="just">
+            <input type="checkbox" id="velvet" value="velvet"/><label for="velvet"> Red Velvet</label>
+          </div>
+         
         </div>
 
         <div id="flex2">
-          <label for=""><input type="checkbox" /> Red wine</label>
-          <label for=""><input type="checkbox" /> Shampagne</label>
-          <label for=""><input type="checkbox" /> Whisky</label>
-          <label for=""><input type="checkbox" /> sider</label>
+          <div id="just">
+            <input type="checkbox" id="redwine" value="redwine"/><label for="redwine"> Red wine</label></div>
+
+          <div id="just">
+            <input type="checkbox" id="shampagne" value="shampagne"/><label for="shampagne"> Shampagne</label></div>
+
+          <div id="just">
+            <input type="checkbox" id="whisky" value="whisky"/><label for="whisky"> Whisky</label></div>
+
+          <div id="just">
+            <input type="checkbox" id="sider" value="sider"/><label for="sider"> sider</label></div>
         </div>
       </div>
 
-      <label for="" id="amount">Amount: <input type="text"></label>
+      <label for="amount">Amount: <input type="text" id="amount"></label>
 
-      <button>Order</button>
+      <button id="btn">Order</button>
     </div>
     </div>
 
-    <div id="about"></div>
+    <div id="about">
+      <div id="cover">
+        <h2>About Vs Restaurant</h2>
+        <div id="flex">
+          <img src="images/captain.jpg" id="circle" alt="">
+          <img src="images/leiutenant.jpg" id="circle"alt="">
+          <img src="images/secont leit.jpeg" id="circle" alt="">
+        </div>
+        <p>Established in 1990 by V Soldier, <br> after coming form fighting the war
+           with his fellow soldiers 
+        </p>
+        <br>
+        <p>To enjoy the finer things in life that they we deprieved during their<br> time in army
+           it serves the tastiest food. serves the elite. food critics 
+        </p>
+      </div>
+    </div>
 
     <div id="contact">
-      <form action="">
-        <label for=""></label>
-        <input type="text" />
-        <label for=""></label>
-        <input type="text" />
-        <label for=""></label>
-        <input type="text" />
-        <label for=""></label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+      <form method="post" action="#home" name="myform" onsubmit="return validate()">
+        <label for="">Name:</label>
+        <input type="text" name="name"/>
+        <label for="">Facebook name:</label>
+        <input type="text" name="Facebook"/>
+        <label for="">Number:</label>
+        <input type="text" name="number"/>
+        <label for="">Feedback</label>
+        <textarea name="" id="" cols="30" rows="10" name="feedback"></textarea>
+        <button>Submit</button>
       </form>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
